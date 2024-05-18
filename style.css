@@ -1,0 +1,23 @@
+body, main, html {
+    height: 100%;
+    margin: 0 auto;
+    background-color: #000A00;
+}
+
+@keyframes reveal-down {
+    from {height: 0%;}
+    to {height: 100%;}
+}
+
+.bg {
+    background: url(media/scotland_1.jpg) no-repeat center fixed;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    animation-name: reveal-down;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+}
