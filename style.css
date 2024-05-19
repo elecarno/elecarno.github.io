@@ -14,6 +14,7 @@
 
 body, main, html {
     height: 100%;
+    width: 100%;
     margin: 0;
     background-color: #111111;
     font-family: "Lora";
@@ -59,11 +60,23 @@ body, main, html {
     animation: reveal-down 1s ease-out 0.2s forwards;
 } */
 
+#title-music-container {
+    position: fixed;
+    height: 70%;
+    width: 50%;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+
 #bg-music {
+    position: absolute;
     background: url("media/jingle_music_inverted_transparent.png") no-repeat center;
     background-size: contain;
-    height: 50%;
+    height: auto;
     width: 50%;
+    height: 50%;
 }
 
 #jingle-button {
@@ -80,24 +93,59 @@ body, main, html {
     color: grey;
 }
 
+#title-container {
+    margin-left: 7rem;
+}
 
 .title {
-    /* opacity: 0%; */
-
     color: white;
-    z-index: 3;
-    margin-left: 7rem;
-    
+
+    /* opacity: 0%; */
     /* animation: fade-in 0.7s ease-out 0.6s forwards; */
 }
 
 #title-name {
-    font-size: 75px;
+    font-size: 78px;
     margin-bottom: 0;
 }
 
 #title-subheading {
     font-size: 30px;
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 1rem;
+}
+
+#stave-image {
+    background: url("media/stave.png") no-repeat center fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#enter-button {
+    height: 50px; 
+    width: 250px; 
+    background-color: transparent; 
+    border: 3px gray solid; 
+    border-radius: 20px;
+    color: gray;
+    font-family: "Lora";
+    font-size: 15px;
+}
+
+#enter-button:hover {
+    color: lightgray;
+    border-color: lightgray;
+}
+
+.quaver {
+    background: url("media/quaver.png") no-repeat center;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    opacity: 0%;
+    animation: fade-in 0.0s forwards;
+    position: relative;
+    animation-play-state: paused;
 }

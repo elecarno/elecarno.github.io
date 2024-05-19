@@ -17,12 +17,37 @@
   </head>
   <body>
     <main>
-      <h1 class="title" id="title-name">Benjamin McEwan</h1>
-      <h2 class="title" id="title-subheading">Media Composer</h2>
-      <button id="jingle-button">
-        <i data-feather="play"></i>
-      </button>
-      <div id="bg-music"></div>
+      <div id="title-music-container" style="display: none">
+        <div id="title-container">
+          <h1 class="title" id="title-name">Benjamin McEwan</h1>
+          <div style="display: flex; flex-direction: row; align-items: center; margin-top: 10px;">
+            <button id="jingle-button" style="margin-top: 5px;">
+              <i data-feather="play"></i>
+            </button>
+            <h2 class="title" id="title-subheading">Media Composer</h2>
+          </div>
+        </div>
+        <!-- <div id="bg-music"></div> -->
+      </div>
+
+      <!-- opening animation -->
+      <div style="width: 100%; height: 100%; position: fixed; display: flex; flex-direction: row; justify-content: center;">
+        <div style="position: absolute; display: flex; flex-direction: column; justify-content: center; align-items: center; top: 15%">
+          <h1 class="title" id="title-name" style="font-size: 50px; margin-bottom: 25px;">Benjamin McEwan</h1>
+          <button id="enter-button">See My Work</button>
+        </div>
+        <div style="display: flex; flex-direction: row; width: 100%; justify-content: center; top: 40%; position: absolute;">
+          <div class="quaver" style="animation-delay: 80ms; top: 29px"></div>
+          <div class="quaver" style="animation-delay: 230ms; top: 15px"></div>
+          <div class="quaver" style="animation-delay: 450ms; top: 0px"></div>
+          <div class="quaver" style="animation-delay: 650ms; top: -14px"></div>
+          <div class="quaver" style="animation-delay: 840ms; top: 0px"></div>
+          <div class="quaver" style="animation-delay: 1000ms; top: -14px"></div>
+          <div class="quaver" style="animation-delay: 1250ms; top: -29px"></div>
+        </div>
+        <div id="stave-image"></div>
+      </div>
+      
     </main>
 	<script src="index.js"></script>
   </body>
