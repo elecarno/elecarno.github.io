@@ -1,14 +1,15 @@
-:root {
-    --green-dark: #1f394d;
-    --green-main: #285454;
-    --green-light: #39755c;
-}
-
 .lora-regular {
     font-family: "Lora", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+.lora-italic {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
 }
 
 body, main, html {
@@ -81,13 +82,13 @@ body, main, html {
 
 
 .title {
-    opacity: 0%;
+    /* opacity: 0%; */
 
     color: white;
     z-index: 3;
     margin-left: 7rem;
     
-    animation: fade-in 0.7s ease-out 0.6s forwards;
+    /* animation: fade-in 0.7s ease-out 0.6s forwards; */
 }
 
 #title-name {
