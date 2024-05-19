@@ -1,12 +1,21 @@
 :root {
     --green-dark: #1f394d;
     --green-main: #285454;
+    --green-light: #39755c;
+}
+
+.lora-regular {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body, main, html {
     height: 100%;
     margin: 0;
     background-color: var(--green-dark);
+    font-family: "Lora";
 }
 
 @keyframes reveal-down {
@@ -14,9 +23,14 @@ body, main, html {
     to { height: 100%; }
 }
 
+@keyframes reveal-right {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
 @keyframes fade-in {
-    from { opacity: 0%; margin-left: 20px;}
-    to {opacity: 100%; margin-left: 0px;}
+    from { opacity: 0%;}
+    to {opacity: 100%;}
 }
 
 #title-page {
@@ -51,7 +65,7 @@ body, main, html {
 }
 
 #title-container {
-    opacity: 0%;
+    width: 0%;
 
     display: flex;
     height: 100%;
@@ -60,20 +74,28 @@ body, main, html {
     align-items: left;
     z-index: 3;
 
-    animation: fade-in 0.7s ease-out 0.6s forwards;
+    animation: reveal-right 1s ease-out 0.2s forwards;
 }
 
 #title-holder {
+    background: url("media/music_1.jpg") no-repeat center fixed;
+    /* background: url("https://source.unsplash.com/2zHGVCrdxHw") no-repeat center fixed; */
+    background-size: cover;
+    background-origin: content-box;
+
     display: flex;
     flex-direction: column;
-    height: 150px;
-    margin-bottom: 7rem;
+    height: 270px;
 }
 
 .title {
+    opacity: 0%;
+
     color: white;
     z-index: 3;
     margin-left: 7rem;
+    
+    animation: fade-in 0.7s ease-out 0.6s forwards;
 }
 
 #title-name {
