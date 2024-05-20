@@ -6,8 +6,11 @@ var jingle = new Audio("./audio/portfolio_website_jingle_2.mp3");
 enterButton.addEventListener("click", function() { 
     const quavers = document.querySelectorAll('.quaver');
     quavers.forEach(quaver => {
-        quaver.style.animationPlayState = 'running';
+        quaver.style.animationPlayState = "running";
     });
+    document.getElementById("title-screen").style.animationPlayState = "running";
+    document.getElementById("title-screen").style.pointerEvents = "none";
+    document.getElementById("homepage").style.animationPlayState = "running";
 
     jingle.play();
 })
@@ -15,6 +18,5 @@ enterButton.addEventListener("click", function() {
 jingleButton.addEventListener("click", function() { 
     jingle.play();
 })
-
 
 feather.replace()
