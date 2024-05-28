@@ -21,13 +21,19 @@
       <div id="homepage">
         <!-- banners -->
         <div id="banner-container">
-          <div class="banner" id="portfolio-banner"></div>
-          <div class="banner" id="about-banner"></div>
-        </div>
+          <div class="banner" id="portfolio-banner">
+              <img src="media/music_1.jpg" alt="Portfolio Image">
+              <button class="banner-button" id="portfolio-button">Portfolio</button>
+          </div>
+          <div class="banner" id="about-banner">
+              <img src="media/scotland_1.jpg" alt="About Image">
+              <button class="banner-button" id="about-button">Contact & About</button>
+          </div>
+      </div>
         <!-- nameplate -->
         <div id="title-music-container">
           <div id="title-container">
-            <h1 class="title" id="title-name">Benjamin McEwan</h1>
+            <h1 class="title" id="title-name">B. McEwan</h1>
             <div style="display: flex; flex-direction: row; align-items: center; margin-top: 10px;">
               <button id="jingle-button" style="margin-top: 5px;">
                 <i data-feather="play"></i>
@@ -38,25 +44,6 @@
           <div id="bg-music"></div>
         </div>
       </div>
-
-      <!-- opening animation -->
-      <div id="title-screen">
-        <div style="position: absolute; display: flex; flex-direction: column; justify-content: center; align-items: center; top: 15%">
-          <h1 class="title" id="title-name" style="font-size: 50px; margin-bottom: 25px;">Benjamin McEwan</h1>
-          <button id="enter-button">See My Work</button>
-        </div>
-        <div style="display: flex; flex-direction: row; width: 100%; justify-content: center; top: 40%; position: absolute;">
-          <div class="quaver" style="animation-delay: 80ms; top: 29px"></div>
-          <div class="quaver" style="animation-delay: 230ms; top: 15px"></div>
-          <div class="quaver" style="animation-delay: 450ms; top: 0px"></div>
-          <div class="quaver" style="animation-delay: 650ms; top: -14px"></div>
-          <div class="quaver" style="animation-delay: 840ms; top: 0px"></div>
-          <div class="quaver" style="animation-delay: 1000ms; top: -14px"></div>
-          <div class="quaver" style="animation-delay: 1250ms; top: -29px"></div>
-        </div>
-        <div id="stave-image"></div>
-      </div>
-      
     </main>
 	<script src="index.js"></script>
   </body>

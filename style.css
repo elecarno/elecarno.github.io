@@ -107,7 +107,7 @@ body, main, html {
     /* top: -5%; */
     
     /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
-    mask-image: linear-gradient(to right, rgba(0,0,0,0) 20%, rgba(0,0,0,1), rgba(0,0,0,0));
+    mask-image: linear-gradient(to right, rgba(0,0,0,0) 20%, rgba(0,0,0,0.7), rgba(0,0,0,0));
 }
 
 #banner-container {
@@ -115,7 +115,6 @@ body, main, html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     height: 100%;
     width: 66%;
     float: right;
@@ -128,17 +127,51 @@ body, main, html {
     height: 90%;
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 120%;
+    transition: transform 0.1s ease-out;
+}
+
+.banner-button {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid white;
+    color: white;
+    font-family: "Lora";
+    font-size: 35px;
+    margin-left: 2.5rem;
+    width: 70%;
+    height: 7%;
+    text-align: left;
+    position: absolute;
+    bottom: 15rem;
+    transition: 0.3s;
+}
+
+.banner-button:hover {
+    cursor: pointer;
+    height: 10%;
+    font-size: 40px;
 }
 
 #portfolio-banner {
-    background: url("media/music_1.jpg") no-repeat center;
-    background-size: cover;
+    /* background: url("media/music_1.jpg") no-repeat center;
+    background-size: cover; */
     margin-right: 1.5rem;
-}
+}   
 
 #about-banner {
-    background: url("media/scotland_1.jpg") no-repeat center;
-    background-size: cover;
+    /* background: url("media/scotland_1.jpg") no-repeat center;
+    background-size: cover; */
     margin-left: 1.5rem;
 }
 
@@ -158,13 +191,13 @@ body, main, html {
 
 #title-container {
     margin-left: 7rem;
-    margin-bottom: 7rem;
+    margin-bottom: 5rem;
 }
 
 .title {
     color: white;
     /* text-shadow: #333333 1px 0 10px; */
-    text-shadow: 1px 1px 5px #888888;
+    /* text-shadow: 1px 1px 5px #888888; */
 }
 
 #title-name {
@@ -178,37 +211,4 @@ body, main, html {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 1rem;
-}
-
-#stave-image {
-    background: url("media/stave.png") no-repeat center fixed;
-    height: 100%;
-    width: 100%;
-}
-
-#enter-button {
-    height: 50px; 
-    width: 250px; 
-    background-color: transparent; 
-    border: 3px gray solid; 
-    border-radius: 20px;
-    color: gray;
-    font-family: "Lora";
-    font-size: 15px;
-}
-
-#enter-button:hover {
-    color: lightgray;
-    border-color: lightgray;
-}
-
-.quaver {
-    background: url("media/quaver.png") no-repeat center;
-    background-size: contain;
-    width: 100px;
-    height: 100px;
-    opacity: 0%;
-    animation: fade-in 0.0s forwards;
-    position: relative;
-    animation-play-state: paused;
 }
