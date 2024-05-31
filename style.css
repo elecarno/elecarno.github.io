@@ -201,7 +201,8 @@ body, main, html {
 }
 
 #title-name {
-    font-size: 78px;
+    font-size: 75px;
+    /* font-size: 4.7em; */
     margin: 0;
 }
 

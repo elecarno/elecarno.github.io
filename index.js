@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let mouseX = 0, mouseY = 0;
     let imgX = 0, imgY = 0;
     let currentBanner = null;
+    let resetInterval = null;
 
     function updateParallax() {
         if (currentBanner) {
@@ -28,8 +29,30 @@ document.addEventListener('DOMContentLoaded', function() {
         requestAnimationFrame(updateParallax);
     }
 
+    function resetPosition(img) {
+        if (resetInterval) {
+            clearInterval(resetInterval);
+        }
+
+        resetInterval = setInterval(() => {
+            imgX += (0 - imgX) * speed;
+            imgY += (0 - imgY) * speed;
+            img.style.transform = `translate(-50%, -50%) translate(${imgX}px, ${imgY}px)`;
+
+            if (Math.abs(imgX) < 0.1 && Math.abs(imgY) < 0.1) {
+                clearInterval(resetInterval);
+                resetInterval = null;
+                img.style.transform = `translate(-50%, -50%)`;
+            }
+        }, 16); // approximately 60fps
+    }
+
     banners.forEach((banner) => {
         banner.addEventListener('mouseenter', (e) => {
+            if (resetInterval) {
+                clearInterval(resetInterval);
+                resetInterval = null;
+            }
             currentBanner = e.currentTarget;
         });
 
@@ -38,19 +61,8 @@ document.addEventListener('DOMContentLoaded', function() {
             currentBanner = null;
             mouseX = 0;
             mouseY = 0;
-
-            // Smoothly move back to resting position
             if (img) {
-                const resetInterval = setInterval(() => {
-                    imgX += (0 - imgX) * speed;
-                    imgY += (0 - imgY) * speed;
-                    img.style.transform = `translate(-50%, -50%) translate(${imgX}px, ${imgY}px)`;
-                    
-                    if (Math.abs(imgX) < 0.1 && Math.abs(imgY) < 0.1) {
-                        clearInterval(resetInterval);
-                        img.style.transform = `translate(-50%, -50%)`;
-                    }
-                }, 16); // approximately 60fps
+                resetPosition(img);
             }
         });
 
