@@ -78,4 +78,49 @@ document.addEventListener('DOMContentLoaded', function() {
     updateParallax();
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const portfolioButton = document.getElementById('portfolio-button');
+    const aboutButton = document.getElementById('about-button');
+    const portfolioPage = document.getElementById('portfolio-page');
+    const aboutPage = document.getElementById('about-page');
+    const portfolioBackButton = document.getElementById('portfolio-back-button');
+    const aboutBackButton = document.getElementById('about-back-button');
+    const bannerContainer = document.getElementById('banner-container');
+
+    portfolioButton.addEventListener('click', () => {
+        fadeInPage(portfolioPage);
+    });
+
+    aboutButton.addEventListener('click', () => {
+        fadeInPage(aboutPage);
+    });
+
+    portfolioBackButton.addEventListener('click', () => {
+        fadeOutPage(portfolioPage);
+    });
+
+    aboutBackButton.addEventListener('click', () => {
+        fadeOutPage(aboutPage);
+    });
+
+    function fadeInPage(page) {
+        page.classList.remove('hidden');
+        page.classList.remove('fade-out');
+        page.classList.add('page');
+        bannerContainer.classList.add('hidden');
+    }
+
+    function fadeOutPage(page) {
+        page.classList.add('fade-out');
+        bannerContainer.classList.remove('hidden');
+        bannerContainer.classList.add('fade-in');
+
+        setTimeout(() => {
+            page.classList.remove('page');
+            page.classList.add('hidden');
+            bannerContainer.classList.remove('fade-in');
+        }, 500); // Match this duration with the fade-out animation duration
+    }
+});
+
 feather.replace()
