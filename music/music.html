@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Google Fonts - Lora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- Title & Style -->
+    <title>Benjamin McEwan - Media Composer</title>
+    <link rel="stylesheet" href="./music.css">
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+  </head>
+  <body>
+    <main>
+      <!-- homepage -->
+      <div id="homepage">
+        <!-- banners -->
+        <div id="banner-container">
+          <div class="banner" id="portfolio-banner">
+              <img src="../media/music_1.jpg" alt="Portfolio Image">
+              <button class="banner-button" id="portfolio-button">Portfolio</button>
+          </div>
+          <div class="banner" id="about-banner">
+              <img src="../media/scotland_1.jpg" alt="About Image">
+              <button class="banner-button" id="about-button">Contact & About</button>
+          </div>
+        </div>
+        <!-- nameplate -->
+        <div id="title-music-container">
+          <div id="title-container">
+            <h1 class="title" id="title-name"><a href="../index.html">B.</a> McEwan</h1>
+            <div style="display: flex; flex-direction: row; align-items: center; margin-top: 10px;">
+              <button id="jingle-button" style="margin-top: 5px;">
+                <i data-feather="play"></i>
+              </button>
+              <h2 class="title" id="title-subheading">Media Composer</h2>
+            </div>
+          </div>
+          <div id="bg-music"></div>
+        </div>
+      </div>
+      <div id="portfolio-page" class="hidden">
+        <button class="back-button" id="portfolio-back-button">Back</button>
+        <div class="page-content">
+          <img src="../media/music_1.jpg" alt="Portfolio Image">
+        </div>
+      </div>
+      <div id="about-page" class="hidden">
+          <button class="back-button" id="about-back-button">Back</button>
+          <div class="page-content">
+            <img src="../media/scotland_1.jpg" alt="About Image">
+          </div>
+      </div>
+    </main>
+	<script src="music.js"></script>
+  </body>
+</html>

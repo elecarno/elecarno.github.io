@@ -20,6 +20,10 @@ body, main, html {
     font-family: "Lora";
 }
 
+a {
+    color: white;
+}
+
 @keyframes reveal-down {
     from { height: 0%; }
     to { height: 100%; }
@@ -125,7 +129,7 @@ body, main, html {
 
     opacity: 35%;
     position: absolute;
-    background: url("media/jingle_music_inverted_transparent.png") no-repeat center;
+    background: url("../media/jingle_music_inverted_transparent.png") no-repeat center;
     background-size: contain;
     height: auto;
     width: 250%;
