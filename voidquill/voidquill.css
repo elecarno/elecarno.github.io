@@ -72,7 +72,7 @@ h2 {
 .date {
     margin: 0;
     margin-left: auto;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: monospace
 }
 
 .divider {
