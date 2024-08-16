@@ -1,0 +1,71 @@
+html, body, main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #333334;
+    font-family: "Lora";
+    display: flex;
+    justify-content: left;
+}
+
+a {
+    color: #333334;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+.banner-button {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid gray;
+    color: #333334;
+    font-family: "Lora";
+    font-size: 20px;
+    height: 7%;
+    width: 250px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.banner-button:hover {
+    cursor: pointer;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.entry-column {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 100%;
+}
+
+.entry-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.divider {
+    height: 470px;
+    width: 11px;
+    background-color: gray;
+    margin-top: 15px;
+    border-radius: 50px;
+}
