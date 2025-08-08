@@ -2,14 +2,17 @@
   "name": "portfolio-v2",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://elecarno.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^6.1.0",
+    "gh-pages": "^6.3.0",
     "svelte": "^5.37.3",
     "vite": "^7.1.0"
   }
