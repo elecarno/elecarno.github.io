@@ -1,0 +1,265 @@
+.lora-regular {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lora-italic {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+
+body, main, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #111111;
+    font-family: "Lora";
+}
+
+a {
+    color: white;
+}
+
+@keyframes reveal-down {
+    from { height: 0%; }
+    to { height: 100%; }
+}
+
+@keyframes reveal-right {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+
+@keyframes fade-in {
+    from { opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+@keyframes fade-out {
+    from { opacity: 100%;}
+    to {opacity: 0%; display: none;}
+}
+
+.hidden {
+    display: none;
+}
+
+.page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 0.5s forwards;
+}
+
+.page.fade-out {
+    animation: fade-out 0.5s forwards;
+}
+
+.page-content img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#title-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.bg {
+    width: 100%;
+    height: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation-fill-mode: forwards;
+}
+
+#homepage {
+    /* opacity: 0%;
+    animation: fade-in 0.5s forwards ease-in-out;
+    animation-delay: 1.8s;
+    animation-play-state: paused; */
+    z-index: 1;
+
+    height: 100%;
+    width: 100%;
+
+    display: inline;
+}
+
+#title-music-container {
+    position: fixed;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#title-screen {
+    background-color: #111111;
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    animation: fade-out 1.5s forwards;
+    animation-delay: 1.3s;
+    animation-play-state: paused;
+    z-index: 3;
+}
+
+#bg-music {
+    pointer-events: none;
+
+    opacity: 35%;
+    position: absolute;
+    background: url("../media/jingle_music_inverted_transparent.png") no-repeat center;
+    background-size: contain;
+    height: auto;
+    width: 250%;
+    height: 100%;
+    left: -50%;
+    /* top: -5%; */
+    
+    /* -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+    mask-image: linear-gradient(to right, rgba(0,0,0,0) 20%, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+.banner-container.fade-in {
+    animation: fade-in 0.5s forwards;
+}
+
+#banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 66%;
+    float: right;
+    position: relative;
+    z-index: 2;
+}
+
+.banner {
+    margin: 3rem;
+    height: 90%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 120%;
+    transition: transform 0.1s ease-out;
+}
+
+.banner-button {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid white;
+    color: white;
+    font-family: "Lora";
+    font-size: 35px;
+    margin-left: 2.5rem;
+    width: 70%;
+    height: 7%;
+    text-align: left;
+    position: absolute;
+    bottom: 15rem;
+    transition: 0.3s;
+}
+
+.banner-button:hover {
+    cursor: pointer;
+    height: 10%;
+    font-size: 40px;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid white;
+    color: white;
+    font-family: "Lora";
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    font-size: 22px;
+}
+
+#portfolio-banner {
+    margin-right: 1.5rem;
+}
+
+#about-banner {
+    margin-left: 1.5rem;
+}
+
+#jingle-button {
+    height: 30px;
+    width: 30px;
+    color: white;
+    background-color: #111111;
+    border: 0;
+}
+
+#jingle-button:hover {
+    height: 30px;
+    width: 30px;
+    color: grey;
+}
+
+#title-container {
+    margin-left: 7rem;
+    margin-bottom: 5rem;
+}
+
+.title {
+    color: white;
+    /* text-shadow: #333333 1px 0 10px; */
+    /* text-shadow: 1px 1px 5px #888888; */
+}
+
+#title-name {
+    font-size: 75px;
+    /* font-size: 4.7em; */
+    margin: 0;
+}
+
+#title-subheading {
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 1rem;
+}

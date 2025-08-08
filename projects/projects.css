@@ -1,0 +1,56 @@
+html, body, main {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    color: white;
+    font-family: "Lora";
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    margin-right: 10px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.link-container {
+    display: flex; 
+    flex-direction:row; 
+    justify-content: center; 
+    align-items: stretch;
+}
+
+.link-container-left {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: left; 
+    align-items: stretch;
+}
+
+.banner-button {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid gray;
+    color: white;
+    font-family: "Lora";
+    font-size: 20px;
+    height: 7%;
+    width: 250px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.banner-button:hover {
+    cursor: pointer;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
