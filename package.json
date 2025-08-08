@@ -2,7 +2,7 @@
   "name": "portfolio-v2",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://elecarno.github.io",
+  "homepage": "https://elecarno.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
