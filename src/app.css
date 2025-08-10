@@ -12,8 +12,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  /* background: #2a2b2a;
-  background: linear-gradient(0deg, rgba(46, 115, 89, 1) 0%, rgba(38, 38, 38, 1) 60%); */
+  background: #2a2b2a;
+  /* background: linear-gradient(0deg, rgba(46, 115, 89, 1) 0%, rgba(38, 38, 38, 1) 60%); */
 }
 
 a {

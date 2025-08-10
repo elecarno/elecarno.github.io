@@ -7,5 +7,8 @@ export default defineConfig({
   build: {
     outDir: 'docs' // Output to docs folder
   },
-  plugins: [svelte()]
+  plugins: [svelte()],
+  optimizeDeps: {
+    include: ['@mateothegreat/svelte5-router']
+  }
 });
