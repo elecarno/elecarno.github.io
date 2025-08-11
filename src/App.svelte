@@ -29,4 +29,4 @@
   ]
 </script>
 
-<Router {routes} />
+<Router {routes} prefix="#" />
