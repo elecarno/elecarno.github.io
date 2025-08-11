@@ -2,12 +2,12 @@
 	let def_col = "rgba(46, 115, 89, 1)"; // default site background
 
   function set_bg(color) {
-    console.log("set bg fade")
+    // console.log("set bg fade")
     document.documentElement.style.setProperty('--site-bg', color);
   }
 
   function reset_bg() {
-    console.log("reset bg fade")
+    // console.log("reset bg fade")
     document.documentElement.style.setProperty('--site-bg', "rgba(46, 115, 89, 1)");
   }
 
