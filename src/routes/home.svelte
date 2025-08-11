@@ -76,7 +76,7 @@ h1 {
   justify-content: center;
   align-items: center;
 
-  width: 100%;
+  width: 70%;
 
   border: none;
   border-color: transparent;

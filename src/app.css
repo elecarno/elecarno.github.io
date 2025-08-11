@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgb(241, 241, 241);
+  color: #f1f1f1;
   background-color: #242424;
 
   font-synthesis: none;
@@ -48,7 +48,7 @@ h1 {
   padding: 2rem;
   text-align: center;
 
-  width: 50%;
+  width: 100%;
 }
 
 .fnt-lora {
