@@ -76,6 +76,10 @@
     ]
   </script>
 
+<svelte:head>
+    <title>Monarch Atolla</title> 
+</svelte:head>
+
 <main>
   <div class="con-logo">
     <h1 class="mon">Monarch</h1>

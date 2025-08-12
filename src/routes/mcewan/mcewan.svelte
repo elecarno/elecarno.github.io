@@ -1,14 +1,18 @@
 <script>
-    import { onMount, onDestroy } from 'svelte';
-  
-    onMount(() => {
-        document.documentElement.classList.add('pg-mcewan');
-    });
-  
-    onDestroy(() => {
-        document.documentElement.classList.remove('pg-mcewan');
-    });
-  </script>
+  import { onMount, onDestroy } from 'svelte';
+
+  onMount(() => {
+      document.documentElement.classList.add('pg-mcewan');
+  });
+
+  onDestroy(() => {
+      document.documentElement.classList.remove('pg-mcewan');
+  });
+</script>
+
+<svelte:head>
+    <title>B. McEwan</title> 
+</svelte:head>
 
 <main>
     <h1>B. McEwan</h1>

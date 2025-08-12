@@ -10,6 +10,10 @@
   });
 </script>
   
+<svelte:head>
+    <title>Elecarno</title> 
+</svelte:head>
+
 <main>
   <h1>Elecarno</h1>
   <p>Page In Development</p>

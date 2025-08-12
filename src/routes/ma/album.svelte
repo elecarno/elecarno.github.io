@@ -32,6 +32,10 @@
 </div>
 {/if}
 
+<svelte:head>
+    <title>Monarch Atolla | {name.replace(/<br>/g, '')}</title> 
+</svelte:head>
+
 <main>
     <div class="con-details">
         <img class="img-cover" src={cover} alt="Release Cover">

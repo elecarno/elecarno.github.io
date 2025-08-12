@@ -1,14 +1,18 @@
 <script>
-    import { onMount, onDestroy } from 'svelte';
-  
-    onMount(() => {
-        document.documentElement.classList.add('pg-ao');
-    });
-  
-    onDestroy(() => {
-        document.documentElement.classList.remove('pg-ao');
-    });
-  </script>
+  import { onMount, onDestroy } from 'svelte';
+
+  onMount(() => {
+      document.documentElement.classList.add('pg-ao');
+  });
+
+  onDestroy(() => {
+      document.documentElement.classList.remove('pg-ao');
+  });
+</script>
+
+<svelte:head>
+    <title>Arkady Orlunda</title> 
+</svelte:head>
 
 <main>
     <h1>Arkady Orlunda</h1>
