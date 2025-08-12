@@ -1,9 +1,12 @@
 <script lang="ts">
     import Album from "../album.svelte";
+import md from "../lyrics/winter-night.md?raw"
+
     let tracks = [
         {
             "name": "Call Your Friends in Winter Night",
-            "duration": "5:27"
+            "duration": "5:27",
+            "lyrics": md
         }
     ]
     let links = {

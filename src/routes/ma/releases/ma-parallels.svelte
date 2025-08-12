@@ -1,9 +1,12 @@
 <script lang="ts">
     import Album from "../album.svelte";
+    import md from "../lyrics/parallels.md?raw"
+
     let tracks = [
         {
             "name": "Parallels",
-            "duration": "4:02"
+            "duration": "4:02",
+            "lyrics": md
         }
     ]
     let links = {

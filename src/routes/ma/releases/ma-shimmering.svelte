@@ -1,9 +1,12 @@
 <script lang="ts">
     import Album from "../album.svelte";
+    import md from "../lyrics/shimmering-flower.md?raw"
+
     let tracks = [
         {
             "name": "Shimmering Flower",
-            "duration": "3:31"
+            "duration": "3:31",
+            "lyrics": md
         }
     ]
     let links = {

@@ -1,13 +1,18 @@
 <script lang="ts">
     import Album from "../album.svelte";
+    import md1 from "../lyrics/typewriter-hands.md?raw"
+    import md2 from "../lyrics/the-poetry-game.md?raw"
+
     let tracks = [
         {
             "name": "Typewriter Hands",
-            "duration": "3:52"
+            "duration": "3:52",
+            "lyrics": md1
         },
         {
             "name": "The Poetry Game",
-            "duration": "4:35"
+            "duration": "4:35",
+            "lyrics": md2
         }
     ]
     let links = {

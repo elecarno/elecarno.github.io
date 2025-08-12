@@ -1,21 +1,30 @@
 <script lang="ts">
     import Album from "../album.svelte";
+    import md1 from "../lyrics/ghost-rainy.md?raw"
+    import md2 from "../lyrics/classroom-glow.md?raw"
+    import md3 from "../lyrics/haunt-me-please.md?raw"
+    import md4 from "../lyrics/for-old-light.md?raw"
+
     let tracks = [
         {
             "name": "Does the Ghost Like Rainy Days?",
-            "duration": "4:22"
+            "duration": "4:22",
+            "lyrics": md1
         },
         {
             "name": "Soft Eyes Under Classroom Glow",
-            "duration": "4:16"
+            "duration": "4:16",
+            "lyrics": md2
         },
         {
             "name": "Haunt Me Please",
-            "duration": "4:34"
+            "duration": "4:34",
+            "lyrics": md3
         },
         {
             "name": "For Old Light",
-            "duration": "2:44"
+            "duration": "2:44",
+            "lyrics": md4
         }
     ]
     let links = {

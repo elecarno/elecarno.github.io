@@ -16,7 +16,21 @@
     export let cover = ""
     export let links = {}
     export let release = ""
+
+    let show_lyrics = false
+    let current_song = ""
+    let current_lyrics = ""
   </script>
+
+{#if show_lyrics}
+<div class="con-lyrics">
+    <div class="pan-lyrics">
+        <h2>{current_song}</h2>
+        <pre style="white-space: pre-wrap;">{current_lyrics}</pre>
+        <button on:click={() => {show_lyrics = false}}>Close</button>
+    </div>
+</div>
+{/if}
 
 <main>
     <div class="con-details">
@@ -26,8 +40,15 @@
             <ol>
                 {#each tracklist as tr}
                 <li>
+                    <!-- svelte-ignore a11y_no_static_element_interactions -->
+                    <!-- svelte-ignore a11y_missing_attribute -->
                     <div class="con-track">
-                        <span class="con-name">{tr.name}</span>
+                        <!-- svelte-ignore a11y_click_events_have_key_events -->
+                        <a class="con-name" on:click={() => {
+                            current_song = tr.name;
+                            current_lyrics = tr.lyrics;
+                            show_lyrics = true;
+                        }}>{tr.name}</a>
                         <span class="con-dur">{tr.duration}</span> 
                     </div>
                 </li>
@@ -56,8 +77,51 @@
   /* background: linear-gradient(0deg, #b3923e 0%, rgba(38, 38, 38, 1) 60%); */
 }
 
-h1 {
+h1, h2 {
   font-family: "DM Serif Text";
+}
+
+.con-lyrics {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+    top: 0;
+    left: 0;
+
+    position: absolute;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1 !important;
+}
+
+.pan-lyrics {
+    background-color: #202020;
+    height: 85%;
+    width: 35%;
+
+    border-radius: 16px;
+    
+    z-index: 2 !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 24px;
+}
+.pan-lyrics pre {
+    height: 100%;
+    width: 80%;
+    text-align: left;
+
+    overflow-y: scroll;
+
+    font-family: "Atkinson Hyperlegible";
 }
 
 .con-details {
@@ -116,9 +180,15 @@ h1 {
     font-size: 14px;
 }
 
-.a-back {
+a {
     color: #f1f1f1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.a-back {
     margin-left: 12px;
     font-size: 24px;
+    text-decoration: none;
 }
 </style>

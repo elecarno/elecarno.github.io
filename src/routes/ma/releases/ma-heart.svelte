@@ -1,5 +1,6 @@
 <script lang="ts">
     import Album from "../album.svelte";
+    
     let tracks = [
         {
             "name": "Brother by Heart",

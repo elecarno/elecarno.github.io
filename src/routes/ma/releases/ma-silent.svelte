@@ -1,9 +1,12 @@
 <script lang="ts">
     import Album from "../album.svelte";
+    import md from "../lyrics/when-silent-was-joy.md?raw"
+
     let tracks = [
         {
             "name": "When Silent Was Joy",
-            "duration": "4:02"
+            "duration": "4:02",
+            "lyrics": md
         }
     ]
     let links = {

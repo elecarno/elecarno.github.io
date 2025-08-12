@@ -1,9 +1,12 @@
 <script lang="ts">
     import Album from "../album.svelte";
+    import md from "../lyrics/golden-friend.md?raw"
+
     let tracks = [
         {
             "name": "Golden Friend of Silver Water",
-            "duration": "4:14"
+            "duration": "4:14",
+            "lyrics": md
         }
     ]
     let links = {

@@ -1,9 +1,12 @@
 <script lang="ts">
     import Album from "../album.svelte";
+    import md from "../lyrics/classroom-glow.md?raw"
+
     let tracks = [
         {
             "name": "Soft Eyes Under Classroom Glow",
-            "duration": "4:16"
+            "duration": "4:16",
+            "lyrics": md
         }
     ]
     let links = {
