@@ -34,6 +34,7 @@
     tracklist={tracks}
     cover="https://i.scdn.co/image/ab67616d0000b27386b4d9ee6b6858ea8ded0efc"
     links={links}
+    release="2025.08.02"
 />
 
 

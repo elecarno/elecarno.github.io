@@ -6,6 +6,17 @@
   
   import MonarchAtolla from "./routes/ma/monarchatolla.svelte";
   import maAmber from './routes/ma/releases/ma-amber.svelte';
+  import maHope from './routes/ma/releases/ma-hope.svelte';
+  import maCandle from './routes/ma/releases/ma-candle.svelte';
+  import maBrothers from './routes/ma/releases/ma-brothers.svelte';
+  import maGolden from './routes/ma/releases/ma-golden.svelte';
+  import maWinter from './routes/ma/releases/ma-winter.svelte';
+  import maClassroom from './routes/ma/releases/ma-classroom.svelte';
+  import maShimmering from './routes/ma/releases/ma-shimmering.svelte';
+  import maSimile from './routes/ma/releases/ma-simile.svelte';
+  import maHeart from './routes/ma/releases/ma-heart.svelte';
+  import maSilent from './routes/ma/releases/ma-silent.svelte';
+  import maParallels from './routes/ma/releases/ma-parallels.svelte';
 
   import McEwan from "./routes/mcewan/mcewan.svelte";
 
@@ -20,18 +31,18 @@
     { path: "ma/*", component: MonarchAtolla },
     // albums & eps
     { path: "ma/amber", component: maAmber },
-    { path: "ma/hope", component: maAmber },
-    { path: "ma/candle", component: maAmber },
-    { path: "ma/brothers", component: maAmber },
+    { path: "ma/hope", component: maHope },
+    { path: "ma/candle", component: maCandle },
+    { path: "ma/brothers", component: maBrothers },
     // singles
-    { path: "ma/golden", component: maAmber },
-    { path: "ma/winter", component: maAmber },
-    { path: "ma/classroom", component: maAmber },
-    { path: "ma/shimmering", component: maAmber },
-    { path: "ma/simile", component: maAmber },
-    { path: "ma/heart", component: maAmber },
-    { path: "ma/silent", component: maAmber },
-    { path: "ma/parallels", component: maAmber },
+    { path: "ma/golden", component: maGolden },
+    { path: "ma/winter", component: maWinter },
+    { path: "ma/classroom", component: maClassroom },
+    { path: "ma/shimmering", component: maShimmering },
+    { path: "ma/simile", component: maSimile },
+    { path: "ma/heart", component: maHeart },
+    { path: "ma/silent", component: maSilent },
+    { path: "ma/parallels", component: maParallels },
 
     // mcewan ------------------------------------------------------------------
     { path: "mcewan", component: McEwan },

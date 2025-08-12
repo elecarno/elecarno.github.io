@@ -2,38 +2,27 @@
     import Album from "../album.svelte";
     let tracks = [
         {
-            "name": "Heed the Glow",
-            "duration": "2:13"
+            "name": "Typewriter Hands",
+            "duration": "3:52"
         },
         {
-            "name": "Cold Hollow",
-            "duration": "3:26"
-        },
-        {
-            "name": "Wearing My Memories",
-            "duration": "3:08"
-        },
-        {
-            "name": "Now Here We Are",
-            "duration": "2:27"
-        },
-        {
-            "name": "Cliffside Dance",
-            "duration": "6:16"
+            "name": "The Poetry Game",
+            "duration": "4:35"
         }
     ]
     let links = {
-        "yt": "https://www.youtube.com/watch?v=pDCGaQRyQvY&list=OLAK5uy_l2Oz7qInZp8Syi1MRw1MU-w8EeKLu_tDg",
-        "sp": "https://open.spotify.com/album/5w3KLleq7x2Ow2E6YyjIz6",
-        "it": "https://music.apple.com/us/album/an-amber-ballad-ep/1825362685"
+        "yt": "https://www.youtube.com/watch?v=_qhyW86IwY8&list=OLAK5uy_l6KFvvznP5enJK7z_ZlNWTrdHUUeFi1P0",
+        "sp": "https://open.spotify.com/album/01H8fvUrWGOhNw2IsoLBfj",
+        "it": "https://music.apple.com/us/album/hope-need-not-be-real-single/1761677018"
     }
 </script>
 
 <Album
-    name="An Amber Ballad"
+    name="Hope Need Not Be Real"
     tracklist={tracks}
-    cover="https://i.scdn.co/image/ab67616d0000b27386b4d9ee6b6858ea8ded0efc"
+    cover="https://i.scdn.co/image/ab67616d0000b273fa388bb39949324dce2b02dd"
     links={links}
+    release="2024.08.11"
 />
 
 

@@ -2,38 +2,35 @@
     import Album from "../album.svelte";
     let tracks = [
         {
-            "name": "Heed the Glow",
-            "duration": "2:13"
+            "name": "Does the Ghost Like Rainy Days?",
+            "duration": "4:22"
         },
         {
-            "name": "Cold Hollow",
-            "duration": "3:26"
+            "name": "Soft Eyes Under Classroom Glow",
+            "duration": "4:16"
         },
         {
-            "name": "Wearing My Memories",
-            "duration": "3:08"
+            "name": "Haunt Me Please",
+            "duration": "4:34"
         },
         {
-            "name": "Now Here We Are",
-            "duration": "2:27"
-        },
-        {
-            "name": "Cliffside Dance",
-            "duration": "6:16"
+            "name": "For Old Light",
+            "duration": "2:44"
         }
     ]
     let links = {
-        "yt": "https://www.youtube.com/watch?v=pDCGaQRyQvY&list=OLAK5uy_l2Oz7qInZp8Syi1MRw1MU-w8EeKLu_tDg",
-        "sp": "https://open.spotify.com/album/5w3KLleq7x2Ow2E6YyjIz6",
-        "it": "https://music.apple.com/us/album/an-amber-ballad-ep/1825362685"
+        "yt": "https://www.youtube.com/watch?v=noiuDgTQK9U&list=OLAK5uy_mJF4cSajYgcmGpWnbZJxlwrehtamoBJrY",
+        "sp": "https://open.spotify.com/album/2VFWVR72dGFcHuzCeW5j0U",
+        "it": "https://music.apple.com/us/album/candlelight-fragments-ep/1712007436"
     }
 </script>
 
 <Album
-    name="An Amber Ballad"
+    name="Candlelight Fragments"
     tracklist={tracks}
-    cover="https://i.scdn.co/image/ab67616d0000b27386b4d9ee6b6858ea8ded0efc"
+    cover="https://i.scdn.co/image/ab67616d0000b273350dd3901b9befd86ac5d773"
     links={links}
+    release="2023.11.11"
 />
 
 

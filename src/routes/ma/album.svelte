@@ -15,13 +15,14 @@
     export let tracklist = []
     export let cover = ""
     export let links = {}
+    export let release = ""
   </script>
 
 <main>
     <div class="con-details">
         <img class="img-cover" src={cover} alt="Release Cover">
         <div class="con-text">
-            <h1 style="margin-left: 18px">{name}</h1>
+            <h1 style="margin-left: 18px">{@html name}</h1>
             <ol>
                 {#each tracklist as tr}
                 <li>
@@ -42,7 +43,9 @@
                 <a href={links['it']} class="a-social" target="_blank" rel="noopener noreferrer">
                     <SocialIcons network="itunes" alt="" bgColor="#111111" fgColor="#f1f1f1"/>
                 </a>
+                <p class="lab-release">{release}</p>
             </div>
+            <a class="a-back" href="/ma/">←</a>
         </div>
     </div>
 </main>
@@ -90,6 +93,8 @@ h1 {
 .con-dur {
     width: 20%;
     text-align: right;
+    font-family: "Red Hat Mono", monospace;
+    font-size: 14px;
 }
 
 
@@ -102,5 +107,18 @@ h1 {
 .a-social {
     height: 48px;
     width: 48px;
+}
+
+.lab-release {
+    width: 56.5%; 
+    text-align: right;
+    font-family: "Red Hat Mono", monospace;
+    font-size: 14px;
+}
+
+.a-back {
+    color: #f1f1f1;
+    margin-left: 12px;
+    font-size: 24px;
 }
 </style>
