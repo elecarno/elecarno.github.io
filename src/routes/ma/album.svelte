@@ -195,4 +195,48 @@ a {
     font-size: 24px;
     text-decoration: none;
 }
+
+@media (orientation: portrait) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .pan-lyrics {
+        height: 85%;
+        width: 85%;
+
+        border-radius: 12px;
+
+        padding: 12px;
+    }
+    .pan-lyrics pre {
+        width: 90%;
+    }
+
+    .con-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .img-cover {
+        width: 100%;
+    }
+
+    .con-text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .con-dur {
+        width: 30%;
+        text-align: right;
+    }
+    .lab-release {
+        width: 100%; 
+        text-align: right;
+    }
+}
 </style>

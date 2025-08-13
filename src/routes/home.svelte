@@ -18,8 +18,8 @@
 
 <main>
   <!-- <h1>New Website In Development</h1> -->
-  <p style="font-size: 24px; margin-bottom: 0px">Freelancer & Hobbyist based in Edinburgh, Scotland</p>
-  <p style="margin-top: 4px; margin-bottom: 32px">Email: benrobmc.mc@gmail.com • Discord: @elecarno</p>
+  <p class="lbl-title">Freelancer & Hobbyist based in Edinburgh, Scotland</p>
+  <p class="lbl-contact">Email: benrobmc.mc@gmail.com • Discord: @elecarno</p>
 
   <div class="con-names">
     <button class="btn-name" id="btn-1" on:click={() => {redirect("/elecarno/")}}
@@ -56,11 +56,20 @@
   background: #2a2b2a;
   background: linear-gradient(0deg, var(--site-bg) 0%, rgba(38, 38, 38, 1) 60%);
 
-  color: #f1f1f1 !important
+  color: #f1f1f1 !important;
 }
 
 h1 {
   font-family: "Lora";
+}
+
+.lbl-title {
+  font-size: 24px; 
+  margin-bottom: 0px
+}
+.lbl-contact {
+  margin-top: 4px; 
+  margin-bottom: 32px
 }
 
 .con-names {
@@ -91,13 +100,19 @@ h1 {
   background-size: 115%;
 
   transition: 0.75s;
+
+  color: #f1f1f1 !important;
 }
 .btn-name p {
   margin-top: 0px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.32);
+
+  color: #f1f1f1 !important;
 }
 .btn-name h1 {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.25);
+
+  color: #f1f1f1 !important;
 }
 
 .btn-name:hover {
@@ -116,5 +131,28 @@ h1 {
 }
 #btn-4 {
   background-image: url(../assets/gears.png);
+}
+
+@media (orientation: portrait) {
+  .lbl-title {
+    font-size: 18px; 
+    margin-bottom: 0px
+  }
+  .lbl-contact {
+    font-size: 12px;
+    margin-top: 4px; 
+    margin-bottom: 24px
+  }
+
+  .btn-name {
+    width: 100%;
+  }
+  .btn-name p {
+    font-size: 14px;
+  }
+  .btn-name h1 {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
 }
 </style>

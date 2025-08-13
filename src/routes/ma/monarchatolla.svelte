@@ -193,4 +193,39 @@ h1 {
 
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
+@media (orientation: portrait) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .con-logo {
+    width: 100%;
+    height: 124px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 32px;
+  }
+  .mon {
+    font-size: 64px;
+    margin: 0;
+
+    position: absolute;
+  }
+  .ato {
+    font-size: 82px;
+    margin: 0;
+    position: absolute;
+    padding-left: 120px;
+    padding-top: 24px;
+  }
+
+  .con-display {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: row;
+    gap: 64px;
+  }
+}
 </style>
