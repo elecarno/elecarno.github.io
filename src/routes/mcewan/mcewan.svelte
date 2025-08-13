@@ -16,12 +16,12 @@
 
 <main>
     <h1>B. McEwan</h1>
-    <p>Page In Development</p>
+    <p>3D Artist & Writer</p>
 </main>
 
 <style global>
 h1 {
-  font-family: "Lora";
+  font-family: "DM Serif Text";
 }
 
 :root.pg-mcewan {
