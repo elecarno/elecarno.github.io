@@ -1,6 +1,8 @@
 <script lang="ts">
   import { Router, type RouteConfig } from '@mateothegreat/svelte5-router';
   import Home from "./routes/home.svelte";
+  import pg404 from "./routes/404.svelte"
+  import pgLinks from './routes/links.svelte';
 
   import Elecarno from "./routes/elecarno/elecarno.svelte";
   
@@ -24,6 +26,8 @@
 
   const routes: RouteConfig[] = [
     { component: Home },
+    { path: "/*", component: pg404},
+    { path: "/links", component: pgLinks},
     // elecarno ----------------------------------------------------------------
     { path: "elecarno", component: Elecarno },
 
