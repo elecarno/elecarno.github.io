@@ -19,7 +19,7 @@
 <main>
   <!-- <h1>New Website In Development</h1> -->
   <p class="lbl-title">Freelancer & Hobbyist based in Edinburgh, Scotland</p>
-  <p class="lbl-contact">Email: benrobmc.mc@gmail.com • Discord: @elecarno</p>
+  <p class="lbl-contact">Email: elecarno@proton.me • Discord: @elecarno</p>
 
   <div class="con-names">
     <button class="btn-name" id="btn-1" on:click={() => {redirect("/elecarno/")}}

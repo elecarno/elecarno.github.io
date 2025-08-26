@@ -72,6 +72,19 @@ function redirect(link) {
     <h2>B. McEwan</h2>
     <a href="/mcewan/">/mcewan/</a>
 
+    <h3>3D Artist</h3>
+    <a href="/mcewan/3d/">/mcewan/3d/</a>
+    <ul>
+        <li><a href="/mcewan/3d/dragonfly">/mcewan/3d/dragonfly/</a> - Mechanical Dragonfly</li>
+        <li><a href="/mcewan/3d/butterfly">/mcewan/3d/butterfly/</a> - Mechanical Butterfly</li>
+        <li><a href="/mcewan/3d/ontop">/mcewan/3d/ontop/</a> - We're on Top</li>
+        <li><a href="/mcewan/3d/fighter">/mcewan/3d/fighter/</a> - Space Fighter</li>
+        <li><a href="/mcewan/3d/robot">/mcewan/3d/robot/</a> - Robot</li>
+    </ul>
+
+    <h3>Writer</h3>
+    <a href="/mcewan/3d/">/mcewan/writer/</a>
+
     <hr>
 
     <h2>Arkady Orlunda</h2>

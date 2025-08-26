@@ -21,6 +21,8 @@
   import maParallels from './routes/ma/releases/ma-parallels.svelte';
 
   import McEwan from "./routes/mcewan/mcewan.svelte";
+  import mc3D from "./routes/mcewan/3d.svelte"
+  import mcWriter from './routes/mcewan/writer.svelte';
 
   import ArkadyOrlunda from "./routes/ao/arkadyorlunda.svelte";
 
@@ -50,6 +52,8 @@
 
     // mcewan ------------------------------------------------------------------
     { path: "mcewan", component: McEwan },
+    { path: "mcewan/3d", component: mc3D },
+    { path: "mcewan/writer", component: mcWriter },
 
     // arkady orlunda ----------------------------------------------------------
     { path: "ao", component: ArkadyOrlunda }
