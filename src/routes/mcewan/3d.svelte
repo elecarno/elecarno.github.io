@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-    <title>B. McEwan</title> 
+    <title>B. McEwan | 3D Artist</title> 
 </svelte:head>
 
 <main>
@@ -23,58 +23,61 @@
         <h1>B. McEwan</h1>
         <p>Hard Surface Modeller</p>
     </div>
+    <p class="lbl-contact">Email: elecarno@proton.me • Discord: @elecarno</p>
 
     <div class="con-artworks">
-        <button class="btn-art" id="btn-1" on:click={() => {redirect("/mcewan/3d/dragonfly")}}>artwork</button>
-        <button class="btn-art" id="btn-2" on:click={() => {redirect("/mcewan/3d/butterfly")}}>artwork</button>
-        <button class="btn-art" id="btn-3" on:click={() => {redirect("/mcewan/3d/ontop")}}>artwork</button>
-    </div>
-    <div class="con-artworks">
-        <button class="btn-art" id="btn-4" on:click={() => {redirect("/mcewan/3d/fighter")}}>artwork</button>
-        <button class="btn-art" id="btn-5" on:click={() => {redirect("/mcewan/3d/robot")}}>artwork</button>
+        <button class="btn-art" id="btn-1" on:click={() => {redirect("/mcewan/3d/dragonfly")}}>Mechanical Dragonfly</button>
+        <button class="btn-art" id="btn-2" on:click={() => {redirect("/mcewan/3d/butterfly")}}>Mechanical Butterfly</button>
+        <button class="btn-art" id="btn-3" on:click={() => {redirect("/mcewan/3d/ontop")}}>We're On Top</button>
+        <button class="btn-art" id="btn-4" on:click={() => {redirect("/mcewan/3d/fighter")}}>Space Fighter</button>
+        <button class="btn-art" id="btn-5" on:click={() => {redirect("/mcewan/3d/robot")}}>Study Robot</button>
     </div>
 </main>
 
 <style global>
 :root.pg-mcewan-3d {
-    /* background: #2a2b2a; */
-    background-image: url("https://cdnb.artstation.com/p/assets/images/images/053/205/673/large/benjamin-mcewan-closeup-6.jpg?1661684192");
+    background: #202020;
+    /* background-image: url("https://cdnb.artstation.com/p/assets/images/images/053/205/673/large/benjamin-mcewan-closeup-6.jpg?1661684192");
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 .con-header h1 {
     font-family: "DM Serif Text";
-    margin-bottom: 16px;
-    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 48px;
 }
 .con-header p {
     font-family: "Lora";
     font-size: 24px;
     margin-top: 0;
+    margin-bottom: 32px;
+    font-style: italic;
+}
+
+.lbl-contact {
     margin-bottom: 48px;
 }
 
 .con-artworks {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
 
     width: 100%;
-    height: 400px;
 
     margin-bottom: 32px;
 }
 
 .btn-art {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 
-  width: 400px;
+  width: 100%;
   height: 400px;
 
   border: none;
@@ -85,15 +88,21 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   background-position: center;
-  background-size: 220%;
+  background-size: 110%;
 
   transition: 0.75s;
 
   color: rgba(0, 0, 0, 0);
+  font-family: "DM Serif Text";
+  font-size: 32px;
+  text-align: left;
 }
 .btn-art:hover {
-  background-size: 200%;
+  background-size: 100%;
   border: none;
+  color: #f1f1f1;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #btn-1 {

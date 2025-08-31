@@ -21,7 +21,12 @@
   import maParallels from './routes/ma/releases/ma-parallels.svelte';
 
   import McEwan from "./routes/mcewan/mcewan.svelte";
-  import mc3D from "./routes/mcewan/3d.svelte"
+  import mc3d from "./routes/mcewan/3d.svelte"
+  import mc3dDragonfly from "./routes/mcewan/artworks/dragonfly.svelte"
+  import mc3dButterfly from "./routes/mcewan/artworks/butterfly.svelte"
+  import mc3dOnTop from "./routes/mcewan/artworks/ontop.svelte"
+  import mc3dFighter from "./routes/mcewan/artworks/fighter.svelte"
+  import mc3dRobot from "./routes/mcewan/artworks/robot.svelte"
   import mcWriter from './routes/mcewan/writer.svelte';
 
   import ArkadyOrlunda from "./routes/ao/arkadyorlunda.svelte";
@@ -52,7 +57,12 @@
 
     // mcewan ------------------------------------------------------------------
     { path: "mcewan", component: McEwan },
-    { path: "mcewan/3d", component: mc3D },
+    { path: "mcewan/3d", component: mc3d },
+    { path: "mcewan/3d/dragonfly", component: mc3dDragonfly },
+    { path: "mcewan/3d/butterfly", component: mc3dButterfly },
+    { path: "mcewan/3d/ontop", component: mc3dOnTop },
+    { path: "mcewan/3d/fighter", component: mc3dFighter },
+    { path: "mcewan/3d/robot", component: mc3dRobot },
     { path: "mcewan/writer", component: mcWriter },
 
     // arkady orlunda ----------------------------------------------------------
