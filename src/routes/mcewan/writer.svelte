@@ -24,6 +24,12 @@
         <p class="lbl-subtitle">Fiction & Poetry</p>
         <p class="lbl-contact">Email: elecarno@proton.me</p>
     </div>
+    <div>
+        <p>
+            I'm a writer and poet from the West Coast of Scotland, now based in Edinburgh. For my fiction
+            I write in a range of genres from science fiction and alternate histories, to 
+        </p>
+    </div>
 </main>
 
 <style global>
