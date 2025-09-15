@@ -81,6 +81,10 @@
   /* background: linear-gradient(0deg, #b3923e 0%, rgba(38, 38, 38, 1) 60%); */
 }
 
+main {
+    padding: 2rem;
+}
+
 h1, h2 {
   font-family: "DM Serif Text";
 }

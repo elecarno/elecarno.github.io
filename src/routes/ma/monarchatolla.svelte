@@ -119,7 +119,9 @@
 }
 
 main {
-  min-height: 150vh
+  min-height: 150vh;
+
+  padding: 2rem;
 }
 
 h1 {

@@ -61,8 +61,9 @@ h1 {
     justify-content: center;
     align-items: center;
 
-    width: 100%;
+    width: 95%;
     height: 100%;
+    max-width: 1280px;
     margin-bottom: 16px;
 }
 .con-image img {

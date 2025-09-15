@@ -53,8 +53,8 @@
 :root {
   --site-bg: rgba(46, 115, 89, 1);
 
-  background: #2a2b2a;
-  background: linear-gradient(0deg, var(--site-bg) 0%, rgba(38, 38, 38, 1) 60%);
+  background: #262626;
+  background: linear-gradient(0deg, var(--site-bg) 0%, #262626 60%);
 
   color: #f1f1f1 !important;
 }
