@@ -24,11 +24,13 @@
         <p class="lbl-subtitle">Fiction & Poetry</p>
         <p class="lbl-contact">Email: elecarno@proton.me</p>
     </div>
-    <div>
+    <div class="con-body">
         <p>
             I'm a writer and poet from the West Coast of Scotland, now based in Edinburgh. For my fiction
-            I write in a range of genres from science fiction and alternate histories, to 
+            I write in a range of genres from science fiction and alternate histories, to contemporary settings
+            and personal poetry.
         </p>
+        
     </div>
 </main>
 
@@ -46,7 +48,7 @@
     height: 325px;
     position: absolute;
     top: 0;
-    text-align: left;
+    text-align: center;
 
     background-image: url("../../assets/jura.jpg");
     background-size: cover;
@@ -63,8 +65,6 @@
     font-family: "DM Serif Text";
     margin-bottom: 0px;
     margin-top: 64px;
-
-    margin-left: 256px;
 }
 .lbl-subtitle {
     font-family: "Lora";
@@ -72,13 +72,15 @@
     margin-top: 0;
     margin-bottom: 32px;
     font-style: italic;
-
-    margin-left: 256px;
 }
 .lbl-contact {
     margin-bottom: 48px;
+}
 
-    margin-left: 256px;
+.con-body {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 96px;
 }
 
 </style>
