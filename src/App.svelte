@@ -71,7 +71,7 @@
 </script>
 
 <Router {routes} />
-<footer>This page is a part of <a href="https://www.elecarno.com">elecarno.com</a> hosted on Github Pages.</footer>
+<footer>This page is a part of <a href="/">elecarno.com</a> hosted on Github Pages.</footer>
 
 <style>
   footer {

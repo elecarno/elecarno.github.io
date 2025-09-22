@@ -122,6 +122,10 @@ main {
   min-height: 150vh;
 
   padding: 2rem;
+
+  width: 80%;
+
+  margin: 0 auto;
 }
 
 h1 {

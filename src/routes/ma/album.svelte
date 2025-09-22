@@ -83,6 +83,10 @@
 
 main {
     padding: 2rem;
+
+    margin: 0 auto;
+
+    width: 80%;
 }
 
 h1, h2 {
