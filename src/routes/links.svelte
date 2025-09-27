@@ -85,6 +85,15 @@ function redirect(link) {
     <h3>Writer</h3>
     <a href="/mcewan/3d/">/mcewan/writer/</a>
 
+    <ul>
+        <li><a href="/mcewan/writer/definitions">/mcewan/3d/definitions/</a> - Definitions</li>
+        <li><a href="/mcewan/writer/rifle">/mcewan/3d/rifle/</a> - Freedom Is Not a Rifle</li>
+        <li><a href="/mcewan/writer/green">/mcewan/3d/green/</a> - A Comforting Green</li>
+        <li><a href="/mcewan/writer/pentadecimal">/mcewan/3d/pentadecimal/</a> - The Pentadecimal Watch</li>
+        <li><a href="/mcewan/writer/tool">/mcewan/3d/tool/</a> - It is a tool and a tool only</li>
+        <li><a href="/mcewan/writer/taxi">/mcewan/3d/taxi/</a> - Cold, Jacket, & Taxi</li>
+    </ul>
+
     <hr>
 
     <h2>Arkady Orlunda</h2>
@@ -104,5 +113,10 @@ main {
     min-height: 100vh;
     height: 100%;
     text-align: left;
+
+    width: 90%;
+    min-width: 325px;
+    max-width: 850px;
+    margin: 0 auto;    
 }
 </style>

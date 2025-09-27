@@ -28,6 +28,12 @@
   import mc3dFighter from "./routes/mcewan/artworks/fighter.svelte"
   import mc3dRobot from "./routes/mcewan/artworks/robot.svelte"
   import mcWriter from './routes/mcewan/writer.svelte';
+  import mcDefinitions from './routes/mcewan/stories/mc-definitions.svelte';
+  import mcRifle from './routes/mcewan/stories/mc-rifle.svelte';
+  import mcGreen from './routes/mcewan/stories/mc-green.svelte';
+  import mcPentadecimal from './routes/mcewan/stories/mc-pentadecimal.svelte';
+  import mcTool from './routes/mcewan/stories/mc-tool.svelte';
+  import mcTaxi from './routes/mcewan/stories/mc-taxi.svelte';
 
   import ArkadyOrlunda from "./routes/ao/arkadyorlunda.svelte";
 
@@ -63,7 +69,14 @@
     { path: "mcewan/3d/ontop", component: mc3dOnTop },
     { path: "mcewan/3d/fighter", component: mc3dFighter },
     { path: "mcewan/3d/robot", component: mc3dRobot },
+
     { path: "mcewan/writer", component: mcWriter },
+    { path: "mcewan/writer/definitions", component: mcDefinitions },
+    { path: "mcewan/writer/rifle", component: mcRifle },
+    { path: "mcewan/writer/green", component: mcGreen },
+    { path: "mcewan/writer/pentadecimal", component: mcPentadecimal },
+    { path: "mcewan/writer/tool", component: mcTool },
+    { path: "mcewan/writer/taxi", component: mcTaxi },
 
     // arkady orlunda ----------------------------------------------------------
     { path: "ao", component: ArkadyOrlunda }

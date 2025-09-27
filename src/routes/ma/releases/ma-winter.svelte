@@ -1,6 +1,6 @@
 <script lang="ts">
     import Album from "../album.svelte";
-import md from "../lyrics/winter-night.md?raw"
+    import md from "../lyrics/winter-night.md?raw"
 
     let tracks = [
         {

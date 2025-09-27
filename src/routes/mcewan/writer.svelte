@@ -40,6 +40,17 @@
             <hr>
             <div class="con-w">
                 <div class="con-w-title">
+                    <a href="/mcewan/writer/definitions">Definitions</a>
+                    <span>2025</span>
+                </div>
+                <p>A figure stands squint in the doorway of the 7th Street bar (which was actually on
+                    Mirror Lane, yet self-failingly refused to give itself up to sentimentality). A scarf had
+                    been draped over her left shoulder, offset to such an extent that <strong>one questioned if she
+                    truly wanted to wear it in the first place</strong> — its colour muddied under the neon signs
+                    above.</p>
+            </div>
+            <div class="con-w">
+                <div class="con-w-title">
                     <a href="/mcewan/writer/rifle">Freedom is not a Rifle</a>
                     <span>OYP 2025 Shortlist</span>
                 </div>
@@ -92,9 +103,10 @@
                     How you felt its warmth on your face. <strong>A picturesque view you would never forget.</strong></p>
             </div>
         </div>
-        <div class="con-works">
+        
+        <!-- <div class="con-works">
             <h2>Poetry</h2>
-        </div>
+        </div> -->
     </div>
 </main>
 
