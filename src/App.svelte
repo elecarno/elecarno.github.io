@@ -22,12 +22,17 @@
 
   import McEwan from "./routes/mcewan/mcewan.svelte";
   import mc3d from "./routes/mcewan/3d.svelte"
-  import mc3dDragonfly from "./routes/mcewan/artworks/dragonfly.svelte"
-  import mc3dButterfly from "./routes/mcewan/artworks/butterfly.svelte"
-  import mc3dOnTop from "./routes/mcewan/artworks/ontop.svelte"
-  import mc3dFighter from "./routes/mcewan/artworks/fighter.svelte"
-  import mc3dRobot from "./routes/mcewan/artworks/robot.svelte"
+  import mc3dDragonfly from "./routes/mcewan/artworks/mc-dragonfly.svelte"
+  import mc3dButterfly from "./routes/mcewan/artworks/mc-butterfly.svelte"
+  import mc3dOnTop from "./routes/mcewan/artworks/mc-ontop.svelte"
+  import mc3dFighter from "./routes/mcewan/artworks/mc-fighter.svelte"
+  import mc3dRobot from "./routes/mcewan/artworks/mc-robot.svelte"
   import mcWriter from './routes/mcewan/writer.svelte';
+  import mcCollection from './routes/mcewan/stories/mc-collection.svelte';
+  import mcLucidity from './routes/mcewan/stories/mc-lucidity.svelte';
+  import mcLayerOne from './routes/mcewan/stories/mc-layer-one.svelte';
+  import mcDreamer from './routes/mcewan/stories/mc-dreamer.svelte';
+  import mcPandora from './routes/mcewan/stories/mc-pandora.svelte';
   import mcDefinitions from './routes/mcewan/stories/mc-definitions.svelte';
   import mcRifle from './routes/mcewan/stories/mc-rifle.svelte';
   import mcGreen from './routes/mcewan/stories/mc-green.svelte';
@@ -71,6 +76,11 @@
     { path: "mcewan/3d/robot", component: mc3dRobot },
 
     { path: "mcewan/writer", component: mcWriter },
+    { path: "mcewan/writer/collection", component: mcCollection },
+    { path: "mcewan/writer/lucidity", component: mcLucidity },
+    { path: "mcewan/writer/layer-one", component: mcLayerOne },
+    { path: "mcewan/writer/dreamer", component: mcDreamer },
+    { path: "mcewan/writer/pandora", component: mcPandora },
     { path: "mcewan/writer/definitions", component: mcDefinitions },
     { path: "mcewan/writer/rifle", component: mcRifle },
     { path: "mcewan/writer/green", component: mcGreen },
