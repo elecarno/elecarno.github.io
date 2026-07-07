@@ -30,6 +30,7 @@ function redirect(link) {
     
     <h3>Project Sites</h3>
     <ul>
+        <li><a href="/harbour/">/harbour/</a> - Website for the Planet Harbour project.</li>
         <li><a href="/past-paper-viewer/">/past-paper-viewer/</a> - Website for the Past Paper Viewer project</li>
         <li><a href="/crossing-red-helios/">/crossing-red-helios/</a> - Website for the Crossing Red-Helios project</li>
         <li><a href="/crh-wiki/">/crh-wiki/</a> - Wiki for the Crossing Red-Helios project</li>
@@ -49,22 +50,22 @@ function redirect(link) {
 
     <h3>Albums & EPs</h3>
     <ul>
-        <li><a href="/ma/amber/">/ma/amber/</a> - An Amber Ballad</li>
-        <li><a href="/ma/hope/">/ma/hope/</a> - Hope Need Not Be Real</li>
-        <li><a href="/ma/candle/">/ma/candle/</a> - Candlelight Fragments</li>
-        <li><a href="/ma/brothers/">/ma/brothers/</a> - Brothers at the End of an Era</li>
+        <li><a href="/ma/amber/">/ma/amber</a> - An Amber Ballad</li>
+        <li><a href="/ma/hope/">/ma/hope</a> - Hope Need Not Be Real</li>
+        <li><a href="/ma/candle/">/ma/candle</a> - Candlelight Fragments</li>
+        <li><a href="/ma/brothers/">/ma/brothers</a> - Brothers at the End of an Era</li>
     </ul>
 
     <h3>Singles</h3>
     <ul>
-        <li><a href="/ma/golden">/ma/golden/</a> - Golden Friend of Silver Water</li>
-        <li><a href="/ma/winter">/ma/winter/</a> - Call Your Names In Winter Night</li>
-        <li><a href="/ma/classroom">/ma/classroom/</a> Soft Eyes Under Classroom Glow</li>
-        <li><a href="/ma/shimmering">/ma/shimmering/</a> - Shimmering Flower</li>
-        <li><a href="/ma/simille">/ma/simile/</a> - Fall in Simile</li>
-        <li><a href="/ma/heart">/ma/heart/</a> - Brother by Heart</li>
-        <li><a href="/ma/silent">/ma/silent/</a> - When Silent Was Joy</li>
-        <li><a href="/ma/parallels">/ma/parallels/</a> - Parallels</li>
+        <li><a href="/ma/golden">/ma/golden</a> - Golden Friend of Silver Water</li>
+        <li><a href="/ma/winter">/ma/winter</a> - Call Your Names In Winter Night</li>
+        <li><a href="/ma/classroom">/ma/classroom</a> Soft Eyes Under Classroom Glow</li>
+        <li><a href="/ma/shimmering">/ma/shimmering</a> - Shimmering Flower</li>
+        <li><a href="/ma/simille">/ma/simile</a> - Fall in Simile</li>
+        <li><a href="/ma/heart">/ma/heart</a> - Brother by Heart</li>
+        <li><a href="/ma/silent">/ma/silent</a> - When Silent Was Joy</li>
+        <li><a href="/ma/parallels">/ma/parallels</a> - Parallels</li>
     </ul>
 
     <hr>
@@ -75,23 +76,29 @@ function redirect(link) {
     <h3>3D Artist</h3>
     <a href="/mcewan/3d/">/mcewan/3d/</a>
     <ul>
-        <li><a href="/mcewan/3d/dragonfly">/mcewan/3d/dragonfly/</a> - Mechanical Dragonfly</li>
-        <li><a href="/mcewan/3d/butterfly">/mcewan/3d/butterfly/</a> - Mechanical Butterfly</li>
-        <li><a href="/mcewan/3d/ontop">/mcewan/3d/ontop/</a> - We're on Top</li>
-        <li><a href="/mcewan/3d/fighter">/mcewan/3d/fighter/</a> - Space Fighter</li>
-        <li><a href="/mcewan/3d/robot">/mcewan/3d/robot/</a> - Robot</li>
+        <li><a href="/mcewan/3d/dragonfly">/mcewan/3d/dragonfly</a> - Mechanical Dragonfly</li>
+        <li><a href="/mcewan/3d/butterfly">/mcewan/3d/butterfly</a> - Mechanical Butterfly</li>
+        <li><a href="/mcewan/3d/ontop">/mcewan/3d/ontop</a> - We're on Top</li>
+        <li><a href="/mcewan/3d/fighter">/mcewan/3d/fighter</a> - Space Fighter</li>
+        <li><a href="/mcewan/3d/robot">/mcewan/3d/robot</a> - Robot</li>
     </ul>
 
     <h3>Writer</h3>
     <a href="/mcewan/3d/">/mcewan/writer/</a>
 
     <ul>
-        <li><a href="/mcewan/writer/definitions">/mcewan/3d/definitions/</a> - Definitions</li>
-        <li><a href="/mcewan/writer/rifle">/mcewan/3d/rifle/</a> - Freedom Is Not a Rifle</li>
-        <li><a href="/mcewan/writer/green">/mcewan/3d/green/</a> - A Comforting Green</li>
-        <li><a href="/mcewan/writer/pentadecimal">/mcewan/3d/pentadecimal/</a> - The Pentadecimal Watch</li>
-        <li><a href="/mcewan/writer/tool">/mcewan/3d/tool/</a> - It is a tool and a tool only</li>
-        <li><a href="/mcewan/writer/taxi">/mcewan/3d/taxi/</a> - Cold, Jacket, & Taxi</li>
+        <li><a href="/mcewan/writer/collection">/mcewan/writer/collection</a> - Collection</li>
+        <li><a href="/mcewan/writer/lucidity">/mcewan/writer/lucidity</a> - The Secret to Lucidity</li>
+        <li><a href="/mcewan/writer/layer-one">/mcewan/writer/layer-one</a> - Breaking Layer One</li>
+        <li><a href="/mcewan/writer/dreamer">/mcewan/writer/dreamer</a> - Radio to the Dreamer</li>
+        <li><a href="/mcewan/writer/pandora">/mcewan/writer/pandora</a> - Pandora Was a Man From California</li>
+
+        <li><a href="/mcewan/writer/definitions">/mcewan/writer/definitions</a> - Definitions</li>
+        <li><a href="/mcewan/writer/rifle">/mcewan/writer/rifle</a> - Freedom Is Not a Rifle</li>
+        <li><a href="/mcewan/writer/green">/mcewan/writer/green</a> - A Comforting Green</li>
+        <li><a href="/mcewan/writer/pentadecimal">/mcewan/3d/pentadecimal</a> - The Pentadecimal Watch</li>
+        <li><a href="/mcewan/writer/tool">/mcewan/writer/tool</a> - It is a tool and a tool only</li>
+        <li><a href="/mcewan/writer/taxi">/mcewan/writer/taxi</a> - Cold, Jacket, & Taxi</li>
     </ul>
 
     <hr>
